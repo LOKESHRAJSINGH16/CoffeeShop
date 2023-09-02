@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Finlandica:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(101, 93, 93);
+    
+    /* word-wrap: break-word; */
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    
+    align-items: center; 
+}
+.nav li{
+    padding: auto;
+    text-align: center;
+}
+.nav a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+}
+.nav a:hover{
+   
+    border-radius: 20px;
+    background-color: gold;
+    color: black;
+}
+.nav img{
+    opacity: 2;
+    height: 145px;
+}
+.Signi{
+    display: flex;
+    margin: 10px;
+    
+}
+.Signi *{
+    color: gold;
+    padding: 3px 10px;
+   
+}
+.Signi *:hover{
+    color:white;
+}
+
+/* home page */
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    padding: 10px 10px;
+}
+.home::before{ 
+    content: "";
+    position: absolute;
+    background: url('./coffeecup.jpg') no-repeat center center/cover;
+    height: 650px;
+    
+    width: 100%;
+    z-index: -1;
+    opacity:0.49;
+    /* overflow: hidden; */
+}
+.h-primary{
+    text-align: center;
+    font-size: 2.9rem;
+    color: #613104;
+}
+.home p {
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 20px 0px;
+}
+.home .btn{
+    padding: 10px 17px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: black;
+    color: gold;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* services */
+
+.services{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    width: 100%;
+    justify-content: center;
+}
+.services h1,h2{
+    color: #613104;
+}
+.service_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.services .box{
+    border: 3px solid #613104;
+    border-radius: 5px;
+    margin: 10px 10px;
+    text-align: center;
+    padding: 12px; 
+}
+
+
+.services img{
+    height: 125px ;
+    margin: auto;
+    display: block;
+    
+}
+.services::before{
+    content: "";
+    background: url('./coffee_back.jpeg') no-repeat center center/cover;
+    background-image: radial-gradient( rgb(231, 228, 228),rgb(135, 125, 125)); 
+    width: 100%;
+    height: 650px;
+    position: absolute;
+    z-index: -1;
+    /* opacity: .45; */
+
+}
+
+/* Menu */
+.Menu{
+   
+    width: 100%;
+    height: 650px;
+    
+}
+.Menu h1{
+    color: #613104;
+    
+   
+}
+.Menu_content{
+    display: flex;
+    
+}
+.Menu::before{
+    content: "";
+    /* background: url('./cream.jpeg') no-repeat center center/cover; */
+    
+    /* background-image: linear-gradient(to right, grey , rgb(118, 105, 105),rgb(46, 46, 46)); */
+    /* background-image: radial-gradient( rgb(231, 228, 228),rgb(135, 125, 125));  */
+    width: 100%;
+    height: 650px;
+    position: absolute;
+    z-index: -1;
+ 
+    background: url('./coffee_back.jpeg') no-repeat center center/cover;
+    background-image: radial-gradient( rgb(231, 228, 228),rgb(135, 125, 125)); 
+}
+
+.Menu_content li{
+   padding: 10px 0;
+   
+}
+/* .Menu::before{
+    content: "" ;
+   
+    position: absolute;
+    height: 550px;
+    width: 100%;
+    
+    z-index: -1;
+    opacity: .5;
+} */
+.menu_item{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 15px;
+    column-gap: 5px;
+    flex:5;
+    text-align: center;
+  
+}
+.menu_list{
+   flex:4;
+    margin: 0 25px;
+  
+    z-index: -1;
+    
+  
+}
+ 
+.menu_list li{
+    font-size: 29px;
+    
+    color: #613104;
+    text-shadow: gold 2px 2px ;
+   
+}
+
+.menu_item img{
+    width:100%;
+    height: 80%;
+}
+#menu_1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#menu_1 img{height: 90%;}
+
+/* Contact */
+.ContactUs{
+    font-family: 'Finlandica', sans-serif;
+    background-image: radial-gradient( rgb(231, 228, 228),rgb(135, 125, 125)); 
+}
+.ContactUs h2{
+ text-align: center;
+
+}
+.contactbox{
+    display: flex;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.contactbox h1{
+    color: #613104;
+    text-shadow: black 1px 1px ;
+}
+.contactform {
+    border: 2px solid brown;
+    padding: 10px 15px;
+    flex:1;
+    width:40%;
+    padding: 40px;
+    background: white;
+    
+    font-size: 1.4rem;
+}
+.content{
+    flex: 1;
+}
+.content a{
+  color: rgb(157, 75, 75);
+  display: block;
+}
+.form input[type="submit"]{
+padding: 5px;
+border-radius: 5px;
+color: #fff;
+cursor: pointer;
+background: #613104;
+}
+.form input[type="submit"]:hover{
+    background-color: gold;
+    color: #613104;
+    
+}
+.form textarea, input{
+    border: none;
+    border-bottom: 2px solid #613104;
+   padding: 5px 0;
+   font-size: 16px;
+   outline: none;
+   width: 100%;
+    margin-bottom:4px ;
+}
+
+.contactform .inputform{
+    position: relative;
+    font-size: 18px;
+    
+    width: 100%;
+    margin: 10px;
+}
+.contentdiv{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+}
+.contentdiv .icon{
+    margin-right:10px ;
+    padding: 5px;
+}
+
+.contactform span{
+    position:absolute; 
+    padding: 5px 0;
+    font-size: 18px;
+    margin: 7px 0px;
+    left: 0%;
+    pointer-events: none; 
+    /* pointer event none taki if pointer point to it no action taken */
+    transition: 0.5s;
+    color:#666;
+}
+
+.contactform input:valid ~ span, .contactform input:focus ~ span , .contactform textarea:focus ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-25px);
+}
+
+/* footer */
+footer{
+    height: 50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(198, 192, 153);
+    color: #613104;
+    text-shadow: #fff 1px 1px ;
+}
